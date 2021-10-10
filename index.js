@@ -52,10 +52,28 @@ function run() {
 
         }
 
-        document.getElementById('rez').innerHTML = newList;
+        listK = [];
+        let newListNumber = [];
+
+        for (let i = 0; i < listT.length; ++i) {
+
+            for (let k = 0; k < newList.length; ++k) {
+
+                if (listT[i] == newList[k] && listK.indexOf(k) == -1) {
+                   
+                    listK.push(k);
+                    newListNumber.push(k + 1)
+
+                    break;
+
+                }
+
+            }
+
+        }
+        let a = newListNumber.join(' ')
+        document.getElementById('rez').innerHTML = a;
 
     }
-
-    console.log(listS.sum())
 
 }
