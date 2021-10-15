@@ -24,6 +24,8 @@
     color: white;
     font-weight: 700;
 
+    user-select: none;
+
 }
 
 .box{
