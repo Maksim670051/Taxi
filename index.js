@@ -1,5 +1,4 @@
 
-
 function run() {
 
     // Зануление старого значения в поле
@@ -39,7 +38,6 @@ function run() {
                    
                     listK.push(k);
                     newList.push(listSortT[k])
-
                     break;
 
                 }
@@ -60,7 +58,6 @@ function run() {
                    
                     listK.push(k);
                     newListNumber.push(k + 1)
-
                     break;
 
                 }
@@ -69,10 +66,9 @@ function run() {
 
         }
 
-        let a = newListNumber.join(' ')
-
+        let NumberTaxi = newListNumber.join(' ')
         // Вывод результатов на экран
-        document.getElementById('rez').innerHTML = a;
+        document.getElementById('rez').innerHTML = NumberTaxi;
 
     }
 
